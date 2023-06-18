@@ -30,6 +30,7 @@ router.get('/template-1', function (req, res) {
 
   //            ↙ cюди вводимо назву файлу з сontainer
   res.render('template-1', {
+    layout: 'default',
     page: {
       title: 'Example Page',
     },
