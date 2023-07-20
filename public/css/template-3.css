@@ -102,7 +102,6 @@ section {
   flex-direction: column;
   gap: 24px;
 }
-
 .hero-title {
   color: #5A5A5A;
   font-size: 50px;
@@ -111,7 +110,6 @@ section {
   letter-spacing: -0.8px;
   align-self: stretch;
 }
-
 .hero-text {
   color: #5A5A5A;
   font-size: 20px;
@@ -125,7 +123,6 @@ section {
   padding: 40px 0;
   border-bottom: 1px solid #dee2e6;
 }
-
 .crd {
   display: flex;
   padding: 0px 26px;
@@ -134,7 +131,6 @@ section {
   gap: 12px;
   flex: 1 0 0;
 }
-
 .card-img {
   width: 140px;
   height: 140px;
@@ -161,7 +157,6 @@ section {
   font-weight: 400;
   line-height: 150%;
 }
-
 .card-btn {
   display: inline-block;
   padding: 12px 16px;
@@ -172,12 +167,10 @@ section {
   /* border: 1px solid #6C757D; */
   background: #6C757D;  
 }
-
 .card-btn:hover {
   background: black;
   opacity: 80%;
 }
-
 .btn-text {
   color: #FFF;
   text-align: center;  
