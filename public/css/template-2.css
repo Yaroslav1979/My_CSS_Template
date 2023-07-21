@@ -88,9 +88,7 @@ section {
 
 /* -----------------template-2---------- */
 
-.page-two {
-
-  
+.page-two { 
   
   background: #FFF;
   }
@@ -459,7 +457,7 @@ section {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 150%;
   display: flex;
   align-items: center;
   color: #6c757d;
