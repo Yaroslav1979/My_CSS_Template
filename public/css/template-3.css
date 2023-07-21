@@ -20,17 +20,16 @@ ul {
 body {
   margin: 0;
   width: 1920px;
+  padding: 40px;
   background-color: #e5e5e5;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: 400;
-  
+  font-weight: 400;  
 }
   
 main {
   background-color: white;
-  width: 100%;
- 
+  width: 100%; 
 }
 
 section {

@@ -4,8 +4,9 @@ h2,
 h3,
 h4,
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 !important;
+  /* margin-top: 0;
+  margin-bottom: 0; */
 }
 
 ol,
@@ -22,6 +23,7 @@ image {
 
 body {
   margin: 0;
+  width: 1920px;
   background-color: #e5e5e5;
   padding: 40px;
   font-family: 'Roboto', sans-serif;
@@ -31,15 +33,14 @@ body {
 
 main {
   background-color: white;
-  width: 1920px;
- 
+  width: 100%; 
 }
 
 section {
   margin-inline: 480px;
 }
 
-.page {
+/* .page {
 background: white;
 padding: 0 15px;
 }
@@ -47,7 +48,7 @@ padding: 0 15px;
 .page-content {
 max-width: 960px;
 margin: 0 auto;
-}
+} */
 
 /* ----------header----------- */
 
@@ -57,7 +58,7 @@ margin: 0 auto;
   padding: 25px;
   justify-content: space-between;
   align-items: center;
-  width: 960px;
+  /* width: 960px; */
   height: 74px;
   background: #ffffff;
   border-bottom: 1px solid #dee2e6;

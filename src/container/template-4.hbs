@@ -1,17 +1,56 @@
 <main>
-    
-    <section class="page-two">
-    {{>nav}} 
-    {{#with page}}
-    <h1 class="example" hidden>{{title}} </h1>
-    {{/with}}
+    <section>
+        <div> 
+            {{>nav}} 
+           
+        </div>
+
+    {{>header}}
+
+    {{#with main}}
+<div class="hero">
+   <div class="hero-content">
+        <h1 class="hero-head">{{heading}} </h1>
+        <p class="hero-descr">{{descriotion}} </p>
+   </div>
+   <img src="{{image}}" alt="photo" class="hero-img">
+</div>
+<div class="hero-btn">
+ <a href="{{href}}" class="hero-btn-text">
+        {{button}}
+    </a>
+</div>
+{{/with}}
+
+<main class="blogs">
+{{#each featured}}
+    <div class="card-blog">
+        <img src="{{photo}}" alt="picture" class="card-blog-img">
+        <h2 class="card-blog-title">{{heading}}</h2>
+        <p class="card-blog-text">{{info}} </p>
+        <a href="{{linkUrl}}" class="card-blog-btn">{{linkText}} </a>
+    </div>
+{{/each}}
+</main>
+
+<div class="forms">
+    <div class="form-cont">
+    {{#each actions}}
+    <h3 class="form-name">{{heading}} </h3>
+     </div>
+     <div class="form-a">
+     <a href="{{href}}" class="form-a-text">
+        {{text}}
+    </a>
+    </div>
+    {{/each}}
 </div>
 
-{{>header}}
-<br>
 
 
-<br>
-{{>footer}}
-</section>
+
+
+
+    {{>footer}}
+    </section>
 </main>
