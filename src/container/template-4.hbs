@@ -9,17 +9,18 @@
 
     {{#with main}}
 <div class="hero">
-   <div class="hero-content">
+    <div>
+        <img src="{{image}}" alt="photo" class="hero-img">
+    </div>
+    <div class="hero-content">
         <h1 class="hero-head">{{heading}} </h1>
         <p class="hero-descr">{{descriotion}} </p>
-   </div>
-   <img src="{{image}}" alt="photo" class="hero-img">
-</div>
-<div class="hero-btn">
- <a href="{{href}}" class="hero-btn-text">
+         <a href="{{href}}" class="hero-btn-text">
         {{button}}
-    </a>
+        </a>
+    </div>
 </div>
+   
 {{/with}}
 
 <main class="blogs">
@@ -34,13 +35,12 @@
 </main>
 
 <div class="forms">
-    <div class="form-cont">
     {{#each actions}}
-    <h3 class="form-name">{{heading}} </h3>
-     </div>
-     <div class="form-a">
-     <a href="{{href}}" class="form-a-text">
-        {{text}}
+    <div class="form-cont">    
+    <p class="form-name">{{heading}} </p>   
+     
+     <a href="{{href}}" class="form-a">
+        <button class="form-a-text">{{text}}</button>
     </a>
     </div>
     {{/each}}
