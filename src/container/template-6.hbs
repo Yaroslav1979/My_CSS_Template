@@ -1,0 +1,73 @@
+<main>
+    <section>
+        <div> 
+            {{>nav}} 
+           
+        </div>
+
+    {{>header}}
+
+
+<div class="main">
+
+    {{#with info}}
+    <div class="info">        
+        <h2 class="info-title">{{title}}</h2>       
+        <p class="info-descr">{{description}} </p>
+    </div>        
+    {{/with}}
+
+    {{>cardForm}}
+    
+</div>
+     
+<div class="updates">
+    {{#with updates}}
+        <h3 class="up-title">{{title}}</h3>
+        <div class="list">
+        {{#each list}}
+            {{#with this}}
+            <div class="list-cont">
+                <img class="list-img" src="www.w3.org/2000/svg" alt="icon">
+                <div>
+                    <h4 class="list-nick">{{nickname}} </h4>
+                    <p class="list-descr">{{description}} </p>
+                </div>
+            </div>
+            {{/with}}            
+        {{/each}}
+       </div>
+        <a class="list-link" href="{{show_all.url}}">{{show_all.text}} </a>
+
+    {{/with}}
+</div>
+
+
+
+
+<div class="expirience">
+{{#with expirience}}
+    <div class="expirience-title">    
+    <h2 class="exp-title">{{title}} </h2>
+    <span class="exp-badge">{{badge}} </span>   
+    </div>
+    <div class="exp">
+    {{#each list}}
+        
+        <div class="exp-cont">
+            {{#with this}}
+            <h4 class="exp-nick">{{name}} </h3>
+            <p class="exp-descr">{{details}}</p>
+        
+        {{/with}}
+        </div>
+    {{/each}}
+    </div>
+{{/with}}
+</div>
+
+    
+
+    {{>footer}}
+    </section>
+</main>

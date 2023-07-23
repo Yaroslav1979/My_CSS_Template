@@ -26,24 +26,7 @@
         
     {{/with}}
 
-    <form class="form">
-   {{#with form}}
-    <h1 class="form-title">{{title}} </h1>
-    <div class="form-input-list">
-        {{#each inputs}}
-        <input type="{{type}}" id="form-input-{{id}}" placeholder="{{placeholder}}" name="{{name}}"
-        class="form-input">
-        {{/each}}
-    </div>
-    <div class="form-chek-block">  
-        <input type="checkbox" name="{{checkbox.name}}" id="{{checkbox.name}}">
-        <label for="{{checkbox.name}}">{{checkbox.label}} </label>
-    </div>
-        
-        <button class="form-btn" type="submit"><span> {{button}} </span></button>      
-        <p class="form-info">{{info}} </p>
-    {{/with}}
-    </form>
+    {{>cardForm}}
     
 </div>
      
