@@ -1,0 +1,344 @@
+/* скидання браузерних стилів */
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0 !important;
+  /* margin-top: 0;
+  margin-bottom: 0; */
+}
+
+ol,
+ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+image {
+  display: block;
+}
+/* ---------------- */
+
+body {
+  margin: 0;
+  width: 1920px;
+  background-color: #e5e5e5;
+  
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+main {
+  background-color: white;
+  width: 100%; 
+}
+
+section {
+  width: 1000px;
+  margin-inline: 460px;
+}
+
+/* .page {
+  width: 1000px;
+} */
+
+/* ----------header----------- */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 960px; */
+  height: 74px;
+  background: #ffffff;
+  border-bottom: 1px solid #dee2e6;
+}
+.logo {
+  color: white;
+  text-decoration: none;
+  width: 24px;
+  height: 24px;
+}
+
+.txt-logo {
+  border: #563d7c;
+  border-radius: 20%;
+  background: #563d7c;
+  padding: 3px 8px;
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
+}
+
+.nav-page {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-page-txt {
+  margin: 10px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #343a40;
+}
+
+
+
+/* -----------------template-5---------- */
+
+
+  /* ----- hero --------- */
+
+  .main {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 80px 0;
+  }
+
+ .massages {
+  display: flex;
+  flex-direction: column;
+  max-width: 620px;
+  /* height: 100%; */
+  flex-grow: 20;
+  gap: 24px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.10);
+ }
+   
+ .mes-title {
+  color: #212529;
+  font-size: 24px;
+  line-height: 20px;
+  padding-bottom: 12px;
+  
+  align-self: stretch;
+  border-bottom: 1px solid #D3DEE9;
+ }
+
+ .mes-item {
+  display: flex;
+  width: 100%;
+  padding-bottom: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  border-bottom: 1px solid #D3DEE9;
+  position: relative;
+  padding-right: 36px;
+ }
+.mes-name {
+  color: #212529;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px; 
+}
+.mes-data {
+  position: absolute; 
+  right: 0;
+  color: #6c757d;
+}
+
+.mes-message {
+  color: #212529;  
+  font-size: 16px;  
+  line-height: 150%;
+}
+
+.mes-link {
+  color: #007BFF;
+  align-self: flex-end;
+  font-size: 14px;
+  line-height: 20px;
+  transition: 0.7s;
+}
+
+.mes-link:hover {
+  opacity: 0.7;
+}
+/* --------- form ----------- */
+
+ .form {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  padding: 24px;
+  gap: 10px;
+  flex-shrink: 0;
+
+  flex-grow: 12;
+  border-radius: 12px;
+  background: #FFF;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .form-title {
+  color: #212529;
+  text-align: center;
+  font-size: 24px;
+  line-height: 100%;
+  }
+
+  .form-input-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  }
+
+  .form-input {
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  gap: 10px;
+  border-radius: 4px;
+  border: 1px solid #CED4DA;
+  }
+
+  .form-input::placeholder {
+   color: #212529;
+  font-size: 16px;
+  line-height: 100%
+  }
+
+  .form-chek-block {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: 24px 0;
+  }
+
+  .form-chek-block>input {
+  width: 13px;
+  height: 13px;
+  border-radius: 4px;
+  border: 1px solid #767676;
+  background: #FFF;
+  }
+
+  .form-chek-block > label {
+  color: #212529;
+  text-align: center;
+  font-size: 16px;
+  }
+        
+
+  .form-btn {
+  display: flex;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #0D6EFD;
+  background: #0D6EFD;
+  color: #FFF;
+  font-size: 20px;
+  line-height: 30px;
+  transition: 0.7s;
+  }
+
+  .form-btn:hover {
+   opacity: 80%;
+  
+  }
+
+  .form-info {
+  color: #6C757D;
+  text-align: center;  
+  font-size: 16px; 
+  line-height: 24px;
+  }
+/* --------- advantages card---------- */
+
+.advant {
+  display: flex;
+  gap: 24px;
+  align-self: stretch;
+  height: 166px;
+  }
+
+.advant>div {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 8px;
+  border-radius: 12px;
+  border: 1px solid #E4EAF2;
+ }
+
+.advant-title {
+color: #212529;
+font-size: 18px;
+font-weight: 700;
+line-height: 100%;
+}
+
+.advant-text {
+  color: #767676;
+
+font-size: 16px;
+
+line-height: 24px;
+}
+
+/* ----------footer------------ */
+
+.footer-card {
+  border-top: 1px solid #dee2e6;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-items {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px 24px;
+  gap: 10px;
+  width: 960px;
+  height: 188px;
+  border-top: 1px solid #dee2e6;
+}
+
+.footer-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  color: #212529;
+}
+
+.footer-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #6c757d;
+  text-decoration: none;
+}
+
+
+
