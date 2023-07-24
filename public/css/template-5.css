@@ -16,9 +16,9 @@
   --font-xbg: 24px;
   /* --font-lg: 36px; */
 
-  --font-n: 400;
-  --font-b: 500;
-  --font-bg: 700;
+  --font-bn: 400;
+  --font-bb: 500;
+  --font-bbg: 700;
 
   --radius-sm: 4px;
   --radius-md: 8px;
@@ -55,7 +55,7 @@ body {
   background-color: var(--color-li);  
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: var(--font-n);
+  font-weight: var(--font-bn);
 }
 
 main {
@@ -167,7 +167,7 @@ section {
 .mes-name {
   color: var(--color-gr-d);
   font-size: var(--font-md);
-  font-weight: var(--font-bg);
+  font-weight: var(--font-bbg);
   line-height: 20px; 
 }
 .mes-data {
@@ -311,7 +311,7 @@ section {
 .advant-title {
 color: var(--color-gr-d);
 font-size: var(--font-xmd);
-font-weight: var(--font-bg);
+font-weight: var(--font-bbg);
 line-height: 100%;
 }
 
@@ -343,7 +343,7 @@ line-height: 150%;
 }
 
 .footer-name {
-  font-weight: var(--font-b);
+  font-weight: var(--font-bb);
   font-size: var(--font-bg);
   line-height: 24px;
   display: flex;
