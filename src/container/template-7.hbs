@@ -1,0 +1,70 @@
+<main>
+    <section>
+        <div> 
+            {{>nav}} 
+           
+        </div>
+
+    
+    <h1>{{page.title}} </h1>  
+
+
+<div class="main">
+
+{{#with header}}
+           
+        <strong class="logotype">{{brandName}}</strong>       
+   
+    {{#each links}}    
+    <nav class="link">
+        <a href="{{url}}">{{text}} </a>
+    </nav>     
+    {{/each}}
+
+    <div>
+    <a href="{{ad.url}}">{{ad.text}} </a>
+    <p>userOnline {{userOnline}}</p>
+    </div>
+
+{{/with}}
+
+{{#with hero}} 
+
+    <h2 class="title-hero">{{title}} </h2>
+    <p class="descr">{{description}} </p>
+    <a href="{{button.url}}"> <button>{{button.text}} </button> </a>
+
+{{/with}}
+
+{{#with about}} 
+
+    <h3 class="head">{{heading}} </h3>
+    <p class="info">{{info}} </p>
+    
+{{/with}}
+
+{{#each articles}} 
+<div class="article-crd" id="id">
+    {{#if isNew}}
+    <p class="new-article">NEW</p>
+    {{/if}}
+<img src="{{photo}}" alt="photo" class="article-photo">
+<h4 class="article-name">{{name}} </h4>
+<p class="article-descr">{{description}} </p>
+</div>
+{{/each}}    
+
+</div>
+
+{{#with footer}}
+ <span>{{copyright}} </span>
+    {{#each pages}}
+        <a href="{{path}}"><button>{{name}} </button> </a>
+    {{/each}}
+{{/with}}
+
+    
+
+   
+    </section>
+</main>
