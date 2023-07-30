@@ -4,34 +4,9 @@
             {{>nav}}            
         </div>
     
-    <h1 hidden>{{page.title}} </h1>  
+    <h1 hidden>{{page.title}} </h1> 
 
-    <header>
-{{#with header}}
-    
-    <div class="higher-header">
-        <div>   
-        <strong class="logotype">{{brandName}}</strong>       
-        </div>        
-        <nav class="link">
-        {{#each links}}
-        <a href="{{url}}" class="link-cont">{{text}} </a>
-        {{/each}}
-        </nav> 
-    </div>
-
-    <div class="lower-header">
-    {{#with ad}}
-    <p class="ad-cont"> <span class="ad">Ad</span>{{text}} <a href="{{url}}" class="a-link">{{url}} </a>
-    </p>
-    
-    {{/with}}
-    <p class="user">userOnline: {{userOnline}}</p>
-    </div>
-{{/with}}
-</header>
-
-
+{{>headerDark}}
 
 <div class="hero">
 {{#with hero}}
@@ -52,34 +27,9 @@
 {{/with}}
 </div>
 
-<div class="article">
-{{#each articles}} 
-<div class="article-crd" id="id">
- <div>
-<img src="{{photo}}" alt="photo" class="article-photo">
-   {{#if isNew}}
-    <p class="new-article">NEW</p>
-    {{/if}}
-</div>
-<h4 class="article-name">{{name}} </h4>
-<p class="article-descr">{{description}} </p>
-<button class="article-btn">Read All</button>
-</div>
-{{/each}}
-</div>
+{{>articleCardDark}}
 
-<div class="footer">
-{{#with footer}}
-
-    <div class="footer-items">
-    {{#each pages}}
-        <a href="{{path}}" class="footer-link"><button  class="footer-btn">{{name}} </button> </a>
-    {{/each}}
-    </div>
-    <p>{{copyright}} </p>
-{{/with}}
-</div>  
-
+{{>footerDark}}
    
 </section>
 </main>
