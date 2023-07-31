@@ -1,3 +1,5 @@
+@layer component, variant;
+
 @font-face {
     font-family: 'HelveticaNeueBold';
     src: url('/font/Helvetica\ Neue\ 97\ Black\ Condensed.otf');
@@ -14,9 +16,9 @@ body {
 
 :root {
     --color-wh: white;
-    /* --color-gr: #9CA3AF;  
+    --color-gr: #9CA3AF;  
     --color-gr-d: #111827;
-    --color-vi: #885FFB; */
+    --color-vl: #611F69;
   
     --font-sm: 14px;
     --font-md: 16px;
@@ -124,11 +126,38 @@ body {
     letter-spacing: -0.2px;
 }
 
-/* .hero-buttons {
+.hero-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    
+}
 
-} */
+@layer component {
+    .button {
+        text-decoration: none;
+        color: var(--color-gr-d);
+        padding: 20px;
+        border: 1px solid #611F69;
+        border-radius: 4px;
+        text-align: center;
+    }
+}
+
+@layer variant {
+    .button-prim {        
+       color: var(--color-gr);
+       background-color:#611F69;                                    ;
+        }
+
+    .button-second {        
+       color: var(--color-vl);       
+       border-color: #611F69;
+       background-color:white;
+        }
+    }
 
 .hero-img {    
     display: flex;
     min-height: 320px;   
-}
+    }
