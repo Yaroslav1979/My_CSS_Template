@@ -1,12 +1,14 @@
 @font-face {
     font-family: 'HelveticaNeueBold';
-    src: url('/font/HelveticaNeueBold.ttf');
+    src: url('/font/Helvetica\ Neue\ 97\ Black\ Condensed.otf');
 }
 
 body {
     font-family: 'HelveticaNeueBold', sans-serif;
     font-size: var(--font-sm);
-    font-weight: 700;
+    font-style: normal;
+    font-stretch: condensed;
+   
     background-color: var(--color-wh);
 }
 
@@ -68,21 +70,65 @@ body {
 {.page-cont {
     width: 100%;
     max-width: var(--page-width-sm);
+    gap: 36px;
 }}
 
 .hero-section {
-    display: grid;
-    gap: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 36px;
+    position: relative;
+    height: 40vh;
+    min-height: 400px;  
 }
 
 .hero {
    display: grid;
    gap: 20px;
+   max-width: 452px;
+   height: 100%;
+   align-content: center;
+   margin-right: 40px;
+  
 }
 .brands {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 40px;
+    column-gap: 40px;
+    row-gap: 20px;
     flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.hero-label {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%; 
+    text-transform: uppercase;
+}
+
+.hero-title {
+    color: #000;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: -0.2px;
+}
+
+.hero-info {
+    color: #000;   
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -0.2px;
+}
+
+/* .hero-buttons {
+
+} */
+
+.hero-img {    
+    display: flex;
+    min-height: 320px;   
 }
