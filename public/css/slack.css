@@ -41,9 +41,7 @@
             }
         }
 
-
     @layer variant {
-
         .button-prim {        
            color: var(--color-wh);
            background-color:#611F69;                                    ;
