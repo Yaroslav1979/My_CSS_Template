@@ -212,7 +212,8 @@ body {
     position: absolute;
     right: 0;
     top: -150px;
-    overflow: hidden;
+    z-index: 1;
+    /* overflow: hidden; */
 }
 
 .title-section {
@@ -231,7 +232,7 @@ body {
 }
 
 .feat-link {
-    j;
+    justify-self: flex-end; 
 }
 
 .feat-card {
@@ -246,11 +247,12 @@ body {
 
 .featers-grid-4 {
     display: grid;
+    position: relative;
+    z-index: 2;
     gap: 16px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-
-    grid-template-rows: min-content min-content 1fr min-content;
+      grid-template-rows: min-content min-content 1fr min-content;
 }
 
 .featers-grid-4 >.feat-card:first-of-type {    
@@ -298,6 +300,8 @@ body {
 
 .featers-grid-3 {
     display: grid;
+    position: relative;
+    top: -150px;
     gap: 16px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -357,6 +361,8 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    padding-top: 104px;
+    padding-bottom: 80px;
 }
 
 .explore-title {
@@ -396,6 +402,7 @@ body {
     font-size: 24px;
     font-weight: 700;
     line-height: 150%;
+    height: 100px;
 
     /* max-width: 40%; */
 }
@@ -409,8 +416,12 @@ body {
     text-transform: uppercase;
 }
  .learn-arrow {
+    
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
+    position: relative;
+    margin-top: 50px;
+
     /* align-items: end;
     justify-self: flex-end */
 }
