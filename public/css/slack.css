@@ -231,7 +231,7 @@ body {
 }
 
 .feat-link {
-    j;
+    justify-self: flex-end;;
 }
 
 .feat-card {
