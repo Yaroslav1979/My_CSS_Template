@@ -22,10 +22,55 @@
         {{>nav}}
         <div class="page page-dashbord">
 
-            <aside class="page-aside"> </aside> 
-            <header class="page-header"></header>
-            <main class="page-main"></main>
+            <aside class="aside page-aside vertical"> 
+                <div class="aside-logo"> Sidebar </div>
+                <nav class="vertical vertical-small">
 
+                    <a href="#" class="nav-button nav-button-active click">
+                    <span class="icon nav-button-icon" style="background-image: url('/svg/dash-nav/home.svg)"></span>
+                    <span class="text text-light">Home</span>
+                    </a>
+
+                      <a href="#" class="nav-button click">
+                    <span class="icon nav-button-icon" style="background-image: url('/svg/dash-nav/grid.svg)"></span>
+                    <span class="text text-light">Orders</span>
+                    </a>
+
+                      <a href="#" class="nav-button click">
+                    <span class="icon nav-button-icon" style="background-image: url('/svg/dash-nav/table.svg)"></span>
+                    <span class="text text-light">Products</span>
+                    </a>
+
+                </nav>
+            </aside> 
+
+            
+            <header class="header">
+                 <div class="layout header-content text-small">
+                    <div class="header-search">
+                    <input type="text" class="field field-header" placeholder="Search">
+                    <span class="icon header--icon-search" style="background-image: url('/svg/header/search.svg')"> </span>
+                    <span class="icon header--icon-settings icon--button icon--color-blue click" style="background-image: url('/svg/header/settings.svg')"> </span>
+                    </div>
+                </div>
+
+                <div class="assets">
+                    <span class="icon header--icon-asset" style="background-image: url('/svg/header/antenna.svg')"> </span>
+                    <span class="icon header--icon-asset" style="background-image: url('/svg/header/translate.svg')"> </span>
+                    <span class="icon header--icon-asset" style="background-image: url('/svg/header/bell.svg')"> </span>
+                </div>
+
+            </header>
+
+
+
+            <main class="main layout">
+                <div class="layout">
+                    <section class="box">
+                            test                            
+                    </section>                    
+                </div>
+            </main>
         </div>		
 	</body>
 </html>
