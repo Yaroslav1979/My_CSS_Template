@@ -23,7 +23,7 @@
         <div class="page page-dashbord">
 
             <aside class="aside page-aside vertical"> 
-                <div class="aside-logo"> Sidebar </div>
+                <div class="text aside-logo"> Sidebar </div>
                 <nav class="vertical vertical-small">
 
                     <a href="#" class="nav-button nav-button-active click">
@@ -41,6 +41,21 @@
                     <span class="text text-light">Products</span>
                     </a>
 
+                     <div class="fild__block click">
+                        <div class="field field--select">                   
+                            <span class="text text-light"> Choose... </span>
+                           <span class="icon icon-select text-light" style="background-image: url('/svg/arrow-select.svg')"> </span>                    
+                            
+                            <select class="field__select">
+                                <option value="cat">Cat</option>
+                                <option value="dog">Dog</option>
+                                <option value="hamster">Hamster</option>
+                                <option value="parrot">Parrot</option>
+                                <option value="spider">Spider</option>
+                            </select>
+                        </div>
+                    </div>
+
                 </nav>
             </aside> 
 
@@ -48,7 +63,7 @@
             <header class="header">
                  <div class="layout header-content text-small">
                     <div class="header-search">
-                    <input type="text" class="field field-header" placeholder="Search">
+                    <input type="text" class="text field field-header" placeholder="Search">
                     <span class="icon header--icon-search" style="background-image: url('/svg/header/search.svg')"> </span>
                     <span class="icon header--icon-settings icon--button icon--color-blue click" style="background-image: url('/svg/header/settings.svg')"> </span>
                     </div>
@@ -64,10 +79,35 @@
 
 
 
-            <main class="main layout">
+            <main class="main">               
                 <div class="layout">
-                    <section class="box">
-                            test                            
+                    <section class="box analytic__block">
+
+                           <div class="analytic analytic--double analytic--viol">
+                                   
+                                <span class="icon analytic__button  click" style="background-image: url('/svg/card-icon/ph_money.svg')"> </span>
+                                <div class="analytic__content vertical__small">
+                                    <div class="analytic__title">
+
+                                        test
+                                    </div>
+                                </div>
+                           </div>                            
+                    
+                           <div class="analytic analytic--double analytic--blue">
+                            test
+                                <span class="icon analytic__button icon--color-blue click" style="background-image: url('/svg/card-icon/shopping-bag.svg')"> </span>
+                           </div>                            
+                   
+                           <div class="analytic ">
+                            test
+                                <span class="icon analytic__button icon--color-blue click" style="background-image: url('/svg/card-icon/ph_money.svg')"> </span>
+                           </div>                            
+                    
+                           <div class="analytic">
+                            test
+                                <span class="icon analytic__button icon--color-blue click" style="background-image: url('/svg/card-icon/iconoir_shop.svg')"> </span>
+                           </div>                            
                     </section>                    
                 </div>
             </main>

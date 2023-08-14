@@ -107,8 +107,7 @@ body {
    justify-content: space-around;
    background-color: white;
    padding: 12px;
-   max-width: 1640px;
-   
+   max-width: 1640px;   
 }
 
 .layout {
@@ -116,8 +115,30 @@ body {
    max-width: 1300px;
    margin: 0 auto;
 }
+
+.field {
+   min-height: 36px;         
+   padding: 0 12px;
+   border: 1px solid  #BDBDBD;
+   border-radius: 8px;
+}
  
- 
+ .box {
+   border-radius: 16px;
+   background-color: #5B39AD;
+   padding: 24px;
+ }
+
+ .analytic {
+   border-radius: 8px;
+   padding: 24px;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-content: space-between;
+   justify-content: stretch;
+
+ }
 
 }
 
@@ -147,12 +168,7 @@ body {
          justify-content: space-between;
          align-items: center;
       }
-      .field {
-         min-height: 36px;         
-         padding: 0 12px;
-         border: 1px solid  #BDBDBD;
-         border-radius: 8px;
-      }
+     
 
       .box {
          background-color: var(--color-wh);
@@ -192,13 +208,50 @@ body {
          position: relative;
          right: 172px;
       }
-
+/* ----------------------------- */
    .header--icon-asset {
       width: 24px;
       height: 24px;
+   }
 
+   .icon-select {
+      width: 24px;
+      height: 24px;
+      
+   }
+   .field__select {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      cursor: pointer;
+   }
+
+
+   .field__block {
+      position: relative;
+   }
+   .analytic__block {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr 1fr;
+   }
+
+   .analytic__button {
+      width: 28px;
+      height: 28px;
 
    }
+   /* .analytic__content {
+
+   } */
+   .vertical__big {
+      gap: 24px;
+
+   }
+
 }
 
 
@@ -269,6 +322,25 @@ body {
    .icon--color-blue {
       background-color: var(--color-blue-dark);
    }
+
+   .field--select {
+      display: flex;
+      align-items: center;
+      position: relative;
+      justify-content: space-between;
+   }
+
+   .analytic--double {
+      grid-row: 1 / 3;
+   }
+
+   .analytic--viol {
+      background-color: #5B39AD;
+   }
+   .analytic--blue {
+      background-color: #0D6EFD;
+   }
+
 
 }
 
