@@ -75,7 +75,7 @@ body {
  .icon {
    display: block;
    background-repeat: no-repeat;
-   background-position: center center;
+   background-position: center center;   
  }
 
  .nav-button {
@@ -135,20 +135,29 @@ body {
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
-   align-content: space-between;
-   justify-content: stretch;
+   justify-content: space-between;
+   align-items: flex-start;
+ }
 
+ .analytic-small {
+   border-radius: 8px;
+   padding: 24px;
+   display: flex;
+   flex-direction: row;
+   gap: 8px;
+   align-content: center;
+   align-items: center;
  }
 
 }
 
 @layer element {
- .page-aside {
+ .page__aside {
     display: grid;
     grid-row: 1/3;
  }
  
- .aside-logo {   
+ .aside__logo {   
     color: var(--color-wh); 
     font-size: 24px;
     font-weight: 400;    
@@ -156,14 +165,14 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
    }
 
-   .nav-button-icon {
+   .nav__button-icon {
       height: 16px;
       width: 16px;
       /* background-image: url(/svg/dash-nav/home.svg); */
    }
 
      /* --------------header --------- */
-      .header-content {
+      .header__content {
          display: flex;
          justify-content: space-between;
          align-items: center;
@@ -176,7 +185,7 @@ body {
          border-radius: 16px;
       }
 
-      .header-search {
+      .header__search {
          max-width: 30%;
          min-width: 180px;
          width: 100%;
@@ -209,12 +218,12 @@ body {
          right: 172px;
       }
 /* ----------------------------- */
-   .header--icon-asset {
+   .header__icon-asset {
       width: 24px;
       height: 24px;
    }
 
-   .icon-select {
+   .icon__select {
       width: 24px;
       height: 24px;
       
@@ -244,12 +253,31 @@ body {
       height: 28px;
 
    }
-   /* .analytic__content {
 
-   } */
-   .vertical__big {
-      gap: 24px;
+   .analytic__title {      
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 100%; 
+   }
 
+   .analytic__info {     
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 100%;      
+   }
+
+
+   .analytic__content {
+      display: grid;
+      position: relative;
+   }
+
+   .analitic__arrow {
+      height: 22px;
+      width: 22px;
+      position: absolute;
+      top: 0;
+      left: 108%;
    }
 
 }
@@ -257,7 +285,7 @@ body {
 
 
 @layer mod {
-    .page-dashbord {
+    .page--dashbord {
         display: grid;
         grid-template-columns: 280px 1fr;
         grid-template-rows: min-content 1fr;
@@ -269,58 +297,83 @@ body {
       color: black
     }
    
-    .text-heading {
+    .text--heading {
       font-size: 24px;
       color: var(--color-gr-d);
       font-weight: 500;   
     }
 
-    .text-small {
+    .text--small {
       font-size: 12px;
     }
    
-    .text-light {
+    .text--light {
       color: white;
     }
-   
-    .text-grey {
-      color: grey;
+    .text--lidhter {
+      color: rgba(255, 255, 255, 0.70);
     }
    
+    .text--grey {
+      color: grey;
+    }
+
+    .text--dark {
+      color: rgba(0, 0, 0, 0.70);
+    }
    
-    .text-line {
+    .text--middl {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 100%;
+    }
+   
+    .text--line {
       line-height: var(--line-height);
     }
    
-   .text-bold {
+   .text--bold {
       font-weight: 500;
    }
-   .vertical-small {
+   .vertical--small {
       gap: 12px;
    }
 
-   .nav-button-active{
+   .vertical--big {
+      gap: 24px;}
+
+   .nav-button--active{
       background: var(--color-prim);
    }
 
-   .field-header {
+   .field--header {
       padding-left: 44px;
       padding-right: 44px; 
       width: 100%;
       height: 52px;     
    }
 
-   .field-header::placeholder {
+   .field--header::placeholder {
       color: #BDBDBD;
       font-size: 16px;
    }
 
    .icon--button {
       border-radius: 4px;
+      
    }
 
    .icon--color-blue {
-      background-color: var(--color-blue-dark);
+      background-color: var(--color-blue-dark); 
+         
+   }
+
+   .icon--color-viol {
+      background-color: #402B9C;
+   }
+
+   .icon--color-yell {
+      background: #FFF8E3;
    }
 
    .field--select {
@@ -341,9 +394,12 @@ body {
       background-color: #0D6EFD;
    }
 
+   .analytic--White {     
+border: 1px solid #E0E4E8;
+   }
 
 }
 
-@layer adaptive {
+/* @layer adaptive {
 
-}
+} */
