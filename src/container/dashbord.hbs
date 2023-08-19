@@ -23,7 +23,7 @@
         <div class="page page--dashbord">
 
             <aside class="aside page__aside vertical vertical--big"> 
-                <div class="text aside__logo"> Sidebar </div>
+                <div class="text text--light aside__logo"> Sidebar </div>
                 <nav class="vertical vertical--small">
 
                     <a href="#" class="nav-button nav-button--active click">
@@ -86,7 +86,7 @@
                            <div class="analytic-small analytic--blue">
                                 <span class="icon analytic__button icon--color-blue click" style="background-image: url('/svg/card-icon/ph_money.svg')"> </span>
                                 <div class="analytic__content vertical--small">
-                                    <div class="analytic__title text-middl text--light">$203k </div>
+                                    <div class="analytic__title text--middl text--light">$203k </div>
                                     <div class="analytic__info text--small text--lidhter">Total Income </div>                                    
                                 </div>
                            
@@ -101,20 +101,111 @@
                            </div>                            
                     </section> 
 
+                    <section class="purch-pay ">
+                        <div class="box">
+                            <h2 class="caption space--bottom">Purchase list</h2>
+                                                        
+                            <div class="tab-row">
+                                <div class="tab-col">
+                                    <p class="text text--small"> ID437661</p>
+                                    <p class="text text--small"> May 11, 2023, 14:21</p>
+                                </div>
+                                <div class="tab-col">
+                                    <p class="text text--small"> AirOn ProCam</p>
+                                    <p class="text text--small"> 7/8 USB Type-C</p>
+                                </div>
+                                            <div class="tab-col">
+                                    <p class="text text--small"> 132.32 EUR</p>
+                                    <p class="text text--small text--red"> Not paid</p>
+                                            </div>
+                                            
+                                <div class="tab-col">
+                                    <p class="text text--small"> Customer</p>
+                                    <p class="text text--small"> robin@com.de</p>
+                                </div>  
+                            </div>
+                                
+                                                           
+                            <div class="tab-row">
+                                <div class="tab-col">
+                                    <p class="text text--small"> ID437661</p>
+                                   <p class="text text--small"> May 11, 2023, 14:21</p>
+                                </div>
 
+                                <div class="tab-col">
+                                    <p class="text text--small"> PHILIPS Essential</p>
+                                    <p class="text text--small"> HD9200/90</p>
+                                </div>
 
-                    <section>
-                        <div>
-                            
+                                 <div class="tab-col">
+                                    <p class="text text--small"> 543 USD</p>
+                                    <p class="text text--small text--green"> Pay by Stripe</p>
+                                </div>
+                                        
+                                <div class="tab-col">
+                                    <p class="text text--small"> Customer</p>
+                                    <p class="text text--small"> dima@com.ua</p>
+                                </div>  
+                             </div> 
                         </div>
 
-                        <div >
+                        <form class="payment vertical--big box">
+                           <h2 class="caption">Payment</h2>
+                           
+                           <div class="radiobutton vertical--small">
+                            <div class="radio">
+                                <label for="radio1">                           
+                                    <input class="real-radio" type="radio" id="radio1" name="typePay">
+                                    <span class="custom-radio"></span>
+                                     <em class="text text--small">Credit card </em>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="radio2">                           
+                                    <input class="real-radio" type="radio" id="radio2" name="typePay">
+                                    <span class="custom-radio"></span>
+                                    <em class="text text--small"> Debit card </em>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="radio3">                           
+                                    <input class="real-radio" type="radio" id="radio3" name="typePay">
+                                    <span class="custom-radio"></span>
+                                    <em class="text text--small"> PayPal </em> 
+                                </label>
+                           </div>
+                           </div>
 
-                            
-                            {{!-- <div class="fild__block click">
-                                <div class="field field--select">                   
+                           <div class="inputs">
+                            <div class="input-block">
+                                <label class="space-bot--small text text--small" for="input1">Name on card</label>
+                                <input class="space--top field" type="text" id="input1">
+                            </div>
+
+                            <div class="input-block">
+                                <label class="space-bot--small text text--small" for="input1">Credit card number</label>
+                                <input class="space--top field" type="text" id="input1">
+                            </div>
+
+                            <div class="input-block">
+                                <label class="space-bot--small text text--small" for="input1">Expiration</label>
+                                <input class="space--top field" type="text" id="input1">
+                            </div>
+
+                            <div class="input-block">
+                                <label class="space-bot--small text text--small" for="input1">CVV</label>
+                                <input class="space--top field" type="text" id="input1">
+                            </div>
+
+                           </div>
+
+
+                        <div class="choose-inputs border--on border--under">
+                            <div class="fild__block click">
+                                <label for="sel1" class="space-bot--small text text--small">Country</label>
+                                <div class="field field--select" id="sel1">                   
                                     <span class="text text"> Choose... </span>
-                                <span class="icon icon__select text" style="background-image: url('/svg/arrow-select.svg')"> </span>                    
+                                    <span class="icon icon__select text" style="background-image: url('/svg/arrow-select.svg')"> </span>                    
                                     
                                     <select class="field__select">
                                         <option value="cat">Cat</option>
@@ -123,10 +214,28 @@
                                         <option value="parrot">Parrot</option>
                                         <option value="spider">Spider</option>
                                     </select>
-                                </div>
-                            </div> --}}
+                                </div>                                
+                            </div>
 
+                             <div class="fild__block click">
+                                <label for="sel2" class="space-bot--small text text--small">State</label>
+                                <div class="field field--select" id="sel2">                   
+                                    <span class="text text"> Choose... </span>
+                                    <span class="icon icon__select text" style="background-image: url('/svg/arrow-select.svg')"> </span>                    
+                                    
+                                    <select class="field__select">
+                                        <option value="cat">Cat</option>
+                                        <option value="dog">Dog</option>
+                                        <option value="hamster">Hamster</option>
+                                        <option value="parrot">Parrot</option>
+                                        <option value="spider">Spider</option>
+                                    </select>
+                                </div>                                
+                            </div>
                         </div>
+                        
+                        <button class="text text--light form__button nav-button--active click">Continue to checkout</button>                        
+                        </form>
                     </section>
 
                 </div>
