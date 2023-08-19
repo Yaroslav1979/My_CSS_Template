@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			dashbord
+		</title>
+		<meta charset='utf-8' />
+
+        			
+		{{!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> --}}
+
+        <link href='css/normalize.css' rel='stylesheet' />
+
+		<link href='css/dash.css' rel='stylesheet' />
+        <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        {{!-- <meta name="viewpoint" content="width=device-width, initial-scale=1" />   --}}
+    </head>
+
+	<body>
+        {{>nav}}
+        <div class="page page--dashbord">
+
+            <aside class="aside page__aside vertical vertical--big"> 
+                <div class="text aside__logo"> Sidebar </div>
+                <nav class="vertical vertical--small">
+
+                    <a href="#" class="nav-button nav-button--active click">
+                    <span class="icon nav__button-icon" style="background-image: url('/svg/dash-nav/home.svg)"></span>
+                    <span class="text text--light">Home</span>
+                    </a>
+
+                      <a href="#" class="nav-button click">
+                    <span class="icon nav__button-icon" style="background-image: url('/svg/dash-nav/grid.svg)"></span>
+                    <span class="text text--light">Orders</span>
+                    </a>
+
+                      <a href="#" class="nav-button click">
+                    <span class="icon nav__button-icon" style="background-image: url('/svg/dash-nav/table.svg)"></span>
+                    <span class="text text--light">Products</span>
+                    </a>  
+                </nav>
+            </aside> 
+
+            
+            <header class="header">
+                 <div class="layout header__content text--small">
+                    <div class="header__search">
+                    <input type="text" class="text field field--header" placeholder="Search">
+                    <span class="icon header--icon-search" style="background-image: url('/svg/header/search.svg')"> </span>
+                    <span class="icon header--icon-settings icon--button icon--color-blue click" style="background-image: url('/svg/header/settings.svg')"> </span>
+                    </div>
+                </div>
+
+                <div class="assets">
+                    <span class="icon header__icon-asset" style="background-image: url('/svg/header/antenna.svg')"> </span>
+                    <span class="icon header__icon-asset" style="background-image: url('/svg/header/translate.svg')"> </span>
+                    <span class="icon header__icon-asset" style="background-image: url('/svg/header/bell.svg')"> </span>
+                </div>
+
+            </header>
+
+            <main class="main">               
+                <div class="layout">
+                    <section class="box analytic__block vertical--big">
+
+                           <div class="analytic analytic--double analytic--viol">
+                                   
+                                <span class="icon analytic__button icon--button icon--color-viol click" style="background-image: url('/svg/card-icon/ph_money.svg')"> </span>
+                                <div class="analytic__content vertical--small">
+                                    <div class="analytic__title text text--light">$500 </div>
+                                    <div class="analytic__info text--small text--lidhter">Total Earning </div>
+                                    <span class="icon analitic__arrow icon--color-viol click" style="background-image: url('/svg/card-icon/aroow-cirсle.svg')"> </span>
+                                </div>
+                           </div>                            
+                    
+                           <div class="analytic analytic--double analytic--blue">
+                                <span class="icon analytic__button icon--color-blue click" style="background-image: url('/svg/card-icon/shopping-bag.svg')"> </span>
+                                <div class="analytic__content vertical--small">
+                                    <div class="analytic__title text text--light">$961 </div>
+                                    <div class="analytic__info text--small text--lidhter">Total Order </div>                                    
+                                </div>
+                           </div>                            
+                   
+                           <div class="analytic-small analytic--blue">
+                                <span class="icon analytic__button icon--color-blue click" style="background-image: url('/svg/card-icon/ph_money.svg')"> </span>
+                                <div class="analytic__content vertical--small">
+                                    <div class="analytic__title text-middl text--light">$203k </div>
+                                    <div class="analytic__info text--small text--lidhter">Total Income </div>                                    
+                                </div>
+                           
+                           </div>                            
+                    
+                           <div class="analytic-small analytic--White">
+                                <span class="icon analytic__button icon--color-yell click" style="background-image: url('/svg/card-icon/iconoir_shop.svg')"> </span>
+                                 <div class="analytic__content vertical--small">
+                                    <div class="analytic__title text--middl ">$203k </div>
+                                    <div class="analytic__info text--small text--dark">Total Income </div>                                    
+                                </div>
+                           </div>                            
+                    </section> 
+
+
+
+                    <section>
+                        <div>
+                            
+                        </div>
+
+                        <div >
+
+                            
+                            {{!-- <div class="fild__block click">
+                                <div class="field field--select">                   
+                                    <span class="text text"> Choose... </span>
+                                <span class="icon icon__select text" style="background-image: url('/svg/arrow-select.svg')"> </span>                    
+                                    
+                                    <select class="field__select">
+                                        <option value="cat">Cat</option>
+                                        <option value="dog">Dog</option>
+                                        <option value="hamster">Hamster</option>
+                                        <option value="parrot">Parrot</option>
+                                        <option value="spider">Spider</option>
+                                    </select>
+                                </div>
+                            </div> --}}
+
+                        </div>
+                    </section>
+
+                </div>
+            </main>
+        </div>		
+	</body>
+</html>

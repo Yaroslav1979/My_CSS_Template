@@ -329,13 +329,12 @@ body {
 }
 
 .quote-page {
-    display: flex;
-    
+    display: flex;    
     flex-direction: row;
     width: 1020px;
     align-items: center;
     gap: 38px;
-   ;
+   
 }
 .qoute-cont {
     display: flex;
