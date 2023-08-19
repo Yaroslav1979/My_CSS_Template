@@ -56,9 +56,7 @@ body {
     width: 100%;
     min-height: 100vh;
  }
- .main {
-   padding: 40px 12%;   
- }
+
 
  .vertical {
    display: grid;
@@ -101,11 +99,14 @@ body {
  .header {
    display: flex;
    flex-direction: row;
-   justify-content: space-around;
+   justify-content: space-between;
    background-color: white;
    padding: 12px;
    max-width: 1640px;   
 }
+.main {
+   padding: 40px 12%;   
+ }
 
 .layout {
    display: grid;
@@ -223,7 +224,7 @@ body {
       /* background-image: url(/svg/dash-nav/home.svg); */
    }
 
-     /* --------------header --------- */
+     
       .header__content {
          display: flex;
          justify-content: space-between;
@@ -238,20 +239,7 @@ body {
          left: 172px;
          position: relative;
       }
-      .header--icon-search {
-         height: 20px;
-         width: 20px;
-         position: absolute;
-         top: 30%;
-         left: 12px;
-      }
-      .header--icon-settings {
-         height: 28px;
-         width: 28px;
-         position: absolute;
-         right: 25px;
-         top: 22.5%;
-      }
+    
 
       .assets {
          display: flex;
@@ -262,7 +250,7 @@ body {
          position: relative;
          right: 172px;
       }
-/* ----------------------------- */
+
    .header__icon-asset {
       width: 24px;
       height: 24px;
@@ -324,7 +312,7 @@ body {
       left: 108%;
    }
 
-   /* ----------form---- */
+   
    .caption {   
    font-size: 24px;
    font-weight: 600;     
@@ -383,13 +371,26 @@ body {
         grid-template-rows: min-content 1fr;
     }
 
-
     .text {
       font-family: 'Roboto', sans-serif;
       color: black;
       line-height: 100%;
       font-style: normal;
     }
+    .header--icon-search {
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      top: 30%;
+      left: 12px;
+   }
+   .header--icon-settings {
+      height: 28px;
+      width: 28px;
+      position: absolute;
+      right: 25px;
+      top: 22.5%;
+   }
    
     .text--heading {
       font-size: 24px;
@@ -512,6 +513,10 @@ body {
       padding-bottom: 24px;
       border-bottom: 1px solid #E0E4E8; 
       }
+
+   .box--hight {
+      height: max-content;
+   }
 }
 
 /* @layer adaptive {
